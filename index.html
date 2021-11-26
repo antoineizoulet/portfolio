@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Loola's Diner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-1.11.3.js"></script>  
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="miniature.jpg" type="image/jpeg" href="http://loolasdiner.com/img/vignette.jpg">
+    <meta charset="UTF-8">
+    <meta name="Author" content="Antoine Izoulet">
+    <meta property="og:image" content="http://loolasdiner.com/img/vignette.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Loola's Diner">
+    <meta property="og:url" content="http://loolasdiner.com/">
+    <meta property="og:description" content="Fabricant artisanal d'hamburgers">
+</head>
+<body class="loading">
+ 
+    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.4&appId=386196941577144";
+     fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  
+  
+        
+     
+      <div id="fond">
+        
+         
+    <div id="encadrage">
+        
+             
+        <div id="conteneur">
+            <a href="index.html"><img src="img/Logo.png" id="logo"></a>
+        </div>    
+          
+
+        <div id="hamburger">
+          <p id="slogan">Pimp Your Burger !</span></p>
+            <a href="page_parallax.php"><img src="img/mie_haut.png" onmouseover="this.src='img/mie_haut_hover.png'"   onmouseout="this.src='img/mie_haut.png'"id="mie_haut"></a> <br>
+         <a href="page_parallax.php#slide1"> 
+         <img src="img/salade.png" onmouseover="this.src='img/salade_hover.png'" onmouseout="this.src='img/salade.png'" id="salade"></a> <br>
+          <a href="page_parallax.php#slide2"><img src="img/tomates.png" id="tomates"onmouseover="this.src='img/tomates_hover.png'" onmouseout="this.src='img/tomates.png'" id="tomates"></a> <br>
+          <a href="page_parallax.php#slide3"><img src="img/cheese.png" onmouseover="this.src='img/cheese_hover.png'" onmouseout="this.src='img/cheese.png'" id="cheese"></a> <br>
+          <a href="page_parallax.php#footer"><img src="img/steak.png"onmouseover="this.src='img/steak_hover.png'" onmouseout="this.src='img/steak.png'" id="steak"></a> <br>
+           <a href="page_parallax.php"><img src="img/mie_bas.png" id="mie_bas"></a>
+        </div>
+        
+       
+   
+
+        
+            <footer>
+ <div class="fb-page" data-href="https://www.facebook.com/loolasdiner?fref=ts" data-height="50" data-width="300" data-small-header="true"  data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/loolasdiner?fref=ts"><a href="https://www.facebook.com/loolasdiner?fref=ts">Loola&#039;s Diner</a></blockquote></div></div>
+              
+              
+               <a href="http://www.tripadvisor.fr/Restaurant_Review-g1079333-d7079330-Reviews-Loola_s_diner-Gujan_Mestras_Gironde_Aquitaine.html" target="_blank"><img src="img/tripavisor_logo.png" class="social_icon"></a>
+               
+               <p id="copyright">© Copyright 2015 - <a href="http://antoine-izoulet.com/" target="_blank">Antoine Izoulet</a> - Tous droits Réservés</p>
+            </footer>     
+
+          </div>
+    </div>
+         
+  
+  
+    <script>
+        
+        /* CHARGEMENT LOGO */
+        
+        $(document).ready(function(){
+ 
+            var hauteur=210;
+            var largeur=210;
+ 
+            $('#logo').animate(
+                    {
+            width:150,
+            height:150,                
+    },3000,"linear"
+ 
+            );
+ 
+ 
+        });
+        
+        /* DEPLACEMENT BURGER */
+        
+     
+    $("#mie_haut").mouseover( function() { $(this).css("margin-bottom","30px");});
+        
+    $("#mie_haut").mouseleave( function() { $(this).css("margin-bottom","0px");});
+        
+    $("#salade").mouseover( function() { $(this).css("padding-top","60px");});
+        
+    $("#salade").mouseleave( function() { $(this).css("padding-top","0px");});
+        
+    $("#salade").mouseover( function() { $(this).css("padding-bottom","60px");});
+        
+    $("#salade").mouseleave( function() { $(this).css("padding-bottom","0px");});
+        
+    $("#tomates").mouseover( function() { $(this).css("padding-bottom","60px");});
+
+    $("#tomates").mouseleave( function() { $(this).css("padding-bottom","0px");});
+        
+    $("#tomates").mouseover( function() { $(this).css("padding-top","60px");});
+
+    $("#tomates").mouseleave( function() { $(this).css("padding-top","0px");});
+
+    $("#cheese").mouseover( function() { $(this).css("padding-top","60px");});
+    
+    $("#cheese").mouseleave( function() { $(this).css("padding-top","0px");});
+        
+    $("#cheese").mouseover( function() { $(this).css("padding-bottom","60px");});
+        
+    $("#cheese").mouseleave ( function() { $(this).css("padding-bottom","0px");});
+        
+    $("#steak").mouseover( function() { $(this).css("padding-top","60px");});
+
+    $("#steak").mouseleave( function() { $(this).css("padding-top","0px");});
+        
+    $("#steak").mouseover( function() { $(this).css("padding-bottom","60px");});
+        
+    $("#steak").mouseleave( function() { $(this).css("padding-bottom","0px");});
+
+    $("#mie_bas").mouseover( function() { $(this).css("padding-top","30px");});
+        
+    $("#mie_bas").mouseleave( function() { $(this).css("padding-top","0px");});    
+        
+        
+    /* APPARITION TITRE MENU */
+        
+ $("#mie_haut").click (function(){
+    $("#texte_presentation").show();
+ });
+        
+ 
+        
+        
+    /* APPARITION HAMBURGER */
+        
+        
+        
+        $('#mie_haut').slideUp("slow");
+	    $('#mie_haut').slideDown("normal");
+     
+        $('#salade').slideUp("slow");
+	    $('#salade').slideDown("normal");
+        
+        $('#mie_bas').slideUp("slow");
+	    $('#mie_bas').slideDown("normal");
+        
+        $('#steak').slideUp("slow");
+	    $('#steak').slideDown("normal");
+        
+        $('#cheese').slideUp("slow");
+	    $('#cheese').slideDown("normal");
+        
+               
+        $('#tomates').slideUp("slow");
+	    $('#tomates').slideDown("normal");
+        
+        
+        /* TEXTE ROLLOVER */
+
+      
+     
+    </script>
+
+
+</body>
+</html>

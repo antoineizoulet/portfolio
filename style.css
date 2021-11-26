@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.fb-page {
+margin: 10px 10%;
+
+}
+
+
+
+
+
+
+
+/* SELECTION TEXTE */
+
+*::selection { 
+    background:#f5877c; 
+} 
+
+
+*::-webkit-selection { 
+    background:#f5877c; 
+}
+
+
+::-moz-selection {
+     background:#f5877c; 
+}
+
+
+
+#fond {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: #58c2b9;
+}
+
+
+#logo {
+    padding-bottom: 15px;
+
+}
+
+#conteneur {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 25px;
+}
+
+
+
+
+#encadrage {
+    float: left;
+    width: 95%;
+    margin: 25px 2%;
+    border: 15px double #fff;
+
+}
+
+
+#slogan {
+    font-family: Lobster;
+    font-size: 50px;
+    text-align: center;
+    color: #f5877c;
+    margin-bottom: -20px;
+    text-shadow: #fff 2px 2px, #fff -2px 2px, #fff -2px -2px, #fff 2px -2px;
+
+  
+
+}
+
+#slogan:hover {
+    font-family: Lobster;
+    font-size: 50px;
+    text-align: center;
+    color: #f5877c;
+    margin-bottom: -20px;
+    font-style: oblique;
+    text-shadow: #fff 2px 2px, #fff -2px 2px, #fff -2px -2px, #fff 2px -2px;
+}
+
+
+/* HAMBURGER */
+
+#hamburger {
+    text-align: center;
+    height: 300px;
+    margin-top: -64px;
+
+}
+
+#titre {
+    color: #f4877c;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    word-spacing: 10px;
+    display: none;
+    
+
+}
+
+
+#salade {
+    margin-top: -79px;
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+    
+}
+
+#tomates {
+    margin-top: -69px;
+    z-index: 19;
+    position: relative;
+    cursor:pointer;
+
+}
+
+#cheese {
+    margin-top: -85px;
+    position: relative;
+    z-index: 17;
+    cursor:pointer;
+}
+
+#steak {
+    margin-top: -142px;
+    position: relative;
+    z-index: 16;
+}
+
+
+#mie_haut {
+    margin-top: 10px;
+    z-index: 21;
+    position: relative;
+    cursor:pointer;
+}
+
+
+
+
+#mie_bas {
+    margin-top: -130px;
+    position: relative;
+    z-index: 15;
+    cursor: pointer;
+
+}
+
+/* footer */
+
+#copyright {
+float: left;
+width: 30%;
+margin: -23px 38%;
+margin-bottom: 15px;
+font-family: Arial;
+font-style: italic;
+font-size: 12px;
+color: white;
+
+}
+
+#copyright a {
+text-decoration: none;
+color: white;
+}
+
+#copyright a:hover {
+text-decoration: none;
+color: #f5877c;
+}
+
+#texte_footer {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    margin-top: 219px;
+    cursor:pointer;
+
+}
+
+.underline{
+    text-decoration: underline;
+
+}
+
+
+.social_icon {
+    width: 100px;
+    float: right;
+    margin: 263px 22px 13px 0;
+
+}
+
+
+
+@media screen and (max-width: 640px) and (min-width: 200px) {
+
+    .social_icon {
+    width: 100px;
+    float: right;
+    margin: 190px 128px 0 0;
+
+}
+    
+    #encadrage {
+    float: left;
+    width: 89%;
+    margin: 25px 4%;
+    background-color: none;
+    border: 8px double #fff;
+    height: 833px;
+}
+    
+    
+    #slogan {
+    font-family: Lobster;
+    font-size: 44px;
+    text-align: center;
+    color: #f5877c;
+    margin-bottom: -20px;
+    text-shadow: #fff 2px 2px, #fff -2px 2px, #fff -2px -2px, #fff 2px -2px;
+}
+    
+
+    
+    #copyright {
+    float: left;
+    width: 82%;
+    margin: 10px 11%;
+    margin-bottom: 15px;
+    font-family: Arial;
+    font-style: italic;
+    font-size: 12px;
+    color: white;
+}
+
+
+}
